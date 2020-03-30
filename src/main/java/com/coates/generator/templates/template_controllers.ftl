@@ -25,7 +25,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @create ${time}
  **/
 @RestController
-@RequestMapping("")
+@RequestMapping("/${fileName}")
 @Log4j2
 @CrossOrigin(origins = "*", maxAge = 3600)
 @Api(value = "", tags = {""})
