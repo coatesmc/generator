@@ -226,13 +226,13 @@ public class DatasourceUtils {
 
     public String fileName(String fileName) {
 
-        if (fileName.startsWith("t_") && fileName.length() > 3) {
+        if (fileName.indexOf("_") > 0) {
             String[] names = fileName.split("_");
             String newName = "";
             for (String name : names) {
                 newName = newName + initcap(name);
             }
-            newName = newName.substring(1, newName.length()) + "Entity";
+            newName = newName + "Entity";
             return newName;
         }
 

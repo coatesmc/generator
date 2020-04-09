@@ -40,7 +40,7 @@ public class GeneratorControllerServiceImpl implements GeneratorService {
                // step4 加载模版文件
                Template template = configuration.getTemplate("template_controllers.ftl");
                // step5 生成数据
-               File docFile = new File(param.getDestFilePath() + "\\" + param.getFileName() + "Controller.java");
+               File docFile = new File(param.getDestFilePath()+"\\" + param.getFileName() + "Controller.java");
                if(!docFile.exists()) {
                     docFile.createNewFile();
                }
